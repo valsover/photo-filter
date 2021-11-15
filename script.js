@@ -83,7 +83,7 @@ function imgScrolling() {
         if (now.getHours() >= times[i].hoursStart && now.getHours() < times[i].hoursEnd)
         {
             let step2 = (step++).toString().padStart(2, '0');
-            image.src = `https://raw.githubusercontent.com/rolling-scopes-school/stage1-tasks/assets/images/${times[i].name}/${step2}.jpg`;
+            image.src = `assets/images/${times[i].name}/${step2}.jpg`;
             if (step2 == 20) {step = 1;}
         }
     }
